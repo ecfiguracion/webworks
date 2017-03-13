@@ -1,0 +1,73 @@
+body {
+    font-family: 'Lato';
+    background: whitesmoke;
+}
+
+.orbit {
+    background: orange;
+}
+
+.orbit-caption{
+    color: darkgrey;
+}
+
+.orbit-bullets {
+  margin-top: 0.2rem;
+}
+
+.section {
+    margin: 0px;
+    text-align: center;
+}
+
+.section .title {
+    margin-top: 20px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.section .title h3 {
+    margin: 0px;
+}
+
+.section .divider {
+    padding: 0px;
+    margin: -8px 0px 10px 0px;
+}
+
+.top-bar {
+    background:#1F3447;
+}
+
+.section p {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sectionslider {
+    padding: 0px;
+    margin-bottom: -13px;
+}
+.sectionwhite {
+    background: white;
+}
+
+.sectiongray {
+    background: #E0DEDE;
+}
+
+.footer {
+    background-color: #292c2f;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer p.title {
+    color: lightgray;
+}
+
+.footer p.links {
+    color: #6D8EAD;
+}
