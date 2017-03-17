@@ -8,6 +8,10 @@
     padding: 4px;
 }
 
+.card img {
+    width: 100%;
+}
+
 .course {
     font-size: 12px;
     font-weight: lighter;
