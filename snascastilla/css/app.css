@@ -28,6 +28,7 @@ nav li {
 
 nav li a {
     color: lightgray;
+    text-transform: uppercase;
 }
 
 nav li a:hover {
