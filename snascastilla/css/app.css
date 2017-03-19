@@ -11,6 +11,18 @@ body {
     width: 100%;
 }
 
+.ir {
+    font: 0/0 a;
+    color: transparent;
+    border: 0;
+}
+.logo a {
+    background: url('../images/tesda_logo.png');
+    display: block;
+    height:64px;
+    width: 355px;            
+}  
+
 nav {
     margin-left: 45px;
     margin-top: -20px;
