@@ -28,6 +28,8 @@ nav li {
 
 nav li a {
     color: lightgray;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 nav li a:hover {
@@ -72,6 +74,12 @@ nav li a:hover {
 
 .section .title h3 {
     margin: 0px;
+}
+
+.title h5 {
+    font-weight: bold;
+    color: darkslateblue;
+    text-transform: uppercase;
 }
 
 .section .divider {
@@ -136,4 +144,17 @@ a.anchor {
     margin: 0px;
     padding: 0px;
     text-align: right;
+}
+
+.bannerheader {
+    margin-top: 10px;
+    background: #2F3D64;
+}
+
+.bannerheader h3 {
+    text-align: left;
+    line-height: 50px;
+    margin-left: 20px;
+    padding-top: 10px;
+    color: whitesmoke;
 }
