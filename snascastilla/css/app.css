@@ -11,6 +11,19 @@ body {
     width: 100%;
 }
 
+.ir {
+    font: 0/0 a;
+    color: transparent;
+    border: 0;
+}
+.logo a {
+    background: url('../images/tesda_logo.png');
+    display: block;
+    height:64px;
+    width: 355px;            
+}  
+
+
 nav {
     margin-left: 45px;
     margin-top: -20px;
@@ -118,8 +131,20 @@ nav li a:hover {
 
 .footer p.title {
     color: lightgray;
-    margin: 0px;
-    padding: 0px;     
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
+.footer nav li {
+  border-left: 1px solid #aaa;
+  padding-left: 10px;
+}
+
+.footer nav li:first-child {
+  border-left: 0;
+}
+.footer nav a {
+  font-size: 12px;
 }
 
 .footer p.links {
