@@ -1,9 +1,3 @@
-.card .course {
-    /*width: 160px;*/
-    text-align: center;
-    background: #403E2C;
-}
-
 .card-section {
     padding: 4px;
 }
@@ -12,14 +6,33 @@
     width: 100%;
 }
 
-.course {
-    font-size: 12px;
-    font-weight: lighter;
+.coursetitle {
     padding: 4px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;      
+    background:#403E2C;
     height: 50px;
+}
+
+.coursetitle p {
+    text-align: center;
+    text-transform: uppercase;      
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 15px;
+}
+
+.coursetitle a {
+    color: white;
+}
+
+.coursecontent {
+    background:#F8F8F8;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
 }
 
 .newsevents {
@@ -44,6 +57,27 @@
     font-size: 12px;
 }
 
+.course-summary {
+    padding: 0px;
+}
+
+.course-summary p {
+    font-size: 14px;
+    padding: 0px;
+}
+
+.course-summary h5 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.course-summary a {
+    color: orangered;
+}
+
+.course-summary a:hover {
+    color:darkorange;
+}
 
 .person-image {
     border-radius: 50%;

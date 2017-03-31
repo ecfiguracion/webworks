@@ -212,3 +212,8 @@ a.anchor {
 .blockcontent {
     margin-bottom: 20px;
 }
+
+.morelink {
+    font-size: 18px;
+    text-align: center;
+}
