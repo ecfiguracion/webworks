@@ -13,6 +13,17 @@ $(document).ready(function(){
         return false;
         }
     }});    
-});    
 
+    var burger = $('.burger-container');
+        header = $('.the-header');
+
+    burger.click(function(){
+        header.toggleClass('menu-opened');
+    })
+
+    $('.menu-item a').click(function(){
+        $('.the-header').toggleClass('menu-opened');
+    });
+
+});
 
