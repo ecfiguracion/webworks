@@ -168,7 +168,17 @@
     }     
     .top-bar ul {
         background-color: transparent;
-    }       
+    }  
+    footer ul, footer nav {
+        margin: 0;
+    }         
+    footer ul {
+        margin: 0 auto;
+        width: 100%;
+    }
+    footer ul li:last-child {
+        border-left: 0;
+    }    
 }
 
 /*small screens*/
@@ -352,7 +362,20 @@
     }     
     .top-bar ul {
         background-color: transparent;
-    }     
+    }   
+
+    .footer nav li {
+      border-left: 0;
+      display: block;
+      line-height: 1;
+      margin-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    footer nav, footer ul {
+        margin: 0;
+    }    
+
 } 
 
 @media only screen and (max-width: 40em) and (orientation: landscape){ 
