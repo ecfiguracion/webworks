@@ -28,6 +28,13 @@ body {
     position: absolute;
 }
 
+.hero {
+    background: url('../images/slide1.jpg') 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+}
 
 nav {
     margin-left: 45px;
