@@ -12,7 +12,7 @@ $(document).ready(function(){
         }, 1000);
         return false;
         }
-    }});    
+    }});
 
     var burger = $('.burger-container');
         header = $('.the-header');
@@ -25,5 +25,31 @@ $(document).ready(function(){
         $('.the-header').toggleClass('menu-opened');
     });
 
+
+    if ( $(window).width() > 739) {      
+        //large screen view
+    } 
+    else {
+        var $orbit = $('.orbit');
+        var orbitPlugin = new Foundation.Orbit($orbit);
+
+        setTimeout(function() {
+          orbitPlugin.destroy();
+          orbitPlugin.timer.stop;
+        }, 1000)
+
+        setTimeout(function() {
+          orbitPlugin = new Foundation.Orbit($orbit);
+        }, 4000)
+
+        var classobj = orbitPlugin;
+        console.log(Object.getOwnPropertyNames(classobj).filter(function (x) {
+          return typeof classobj[x] === 'function'
+        }));
+    }
+    
+
 });
+
+
 
