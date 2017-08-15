@@ -3,20 +3,262 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <title>Disaster Risk Analysis - Sto. Domingo Albay</title>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+        integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+        crossorigin=""/>    
+    <link rel="stylesheet" href="css/app.css">      
+        
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+        crossorigin=""></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>         
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
+        <section class="hero is-primary is-small">
+            <!-- Hero header: will stick at the top -->
+            <div class="hero-head">
+                <header class="nav">
+                    <div class="container">
+                    <div class="nav-left">
+                        <a class="nav-item">
+                            <!-- <img src="images/logo.png" alt="Logo"> -->
+                            <p style="margin-left:5px">
+                                <strong>Bitz Solution</strong>
+                            </p>
+                        </a>
+                        
+                    </div>
+                    <span class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
+                        <a class="nav-item is-active">
+                        Home
+                        </a>
+                        <a class="nav-item">
+                        Risk Map
+                        </a>
+                        <a class="nav-item">
+                        Graphs
+                        </a>
+                        <a class="nav-item">
+                        Demographic
+                        </a>                    
+                    </div>
+                    </div>
+                </header>
+            </div>
+        
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns">
+                        <div class="column is-one-quarter"></div>
+                        <div class="column">
+                             <img src="images/stodomingo.png" alt="Logo" width="100px" height="100px">
+                             <p class="title is-2">Typhoon Risk Analysis</p>
+                             <h2 class="subtitle">Sto. Domingo Albay</h2>
+                        </div>                                    
+                        <div class="column is-one-quarter"></div>                                                               
+                    </div>
+                </div>
+                
+            </div>
+        
+            <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+            </div>
+        </section>
+
+        <div class="hero is-primary" style="background-color:#55E0CB">
+            <div class="hero-body">
+            <div class="container has-text-centered">
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <span class="icon is-large">
+                                <i class="fa fa-map"></i>                                   
+                            </span>
+                            <p class="title is-5">
+                                <strong>Risk Map</strong>
+                            </p>
+                            <p class="subtitle">
+                                Know the disaster risk areas
+                            </p>
+                        </div>
+                        <div class="column has-text-centered">
+                                <span class="icon is-large">
+                                    <i class="fa fa-bar-chart"></i>                                   
+                                </span>
+                                <p class="title is-4">
+                                    <strong>Graphs</strong>
+                                </p>
+                                <p class="subtitle">
+                                    View effects and damages of the disaster
+                                </p>
+                        </div>
+                        <div class="column has-text-centered">
+                                <span class="icon is-large">
+                                    <i class="fa fa-users"></i>                                   
+                                </span>
+                                <p class="title is-4">
+                                    <strong>Demographic</strong>
+                                </p>
+                                <p class="subtitle">
+                                    Understand demographic details
+                                </p>
+                        </div> 
+                        <div class="column has-text-centered">
+                                <span class="icon is-large">
+                                    <i class="fa fa-line-chart"></i>                                   
+                                </span>
+                                <p class="title is-4">
+                                    <strong>Risk Trends</strong>
+                                </p>
+                                <p class="subtitle">
+                                    Observe the disaster risk trends
+                                </p>
+                        </div>                                                                             
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background-color:whitesmoke; padding:20px">
+            <div class="container">
+                <!-- Main container -->
+                <nav class="level">
+                <!-- Left side -->
+                <div class="level-left">
+                <div class="level-item">
+                    <div class="field">
+                        <label class="label">Typhoon</label>
+                        <div class="control" >
+                            <div class="select">
+                                <select style="width:200px">
+                                    <option>Milenyo</option>
+                                    <option>Reming</option>
+                                    <option>Rosing</option>
+                                </select>
+                            </div>
+                        </div>                                             
+                    </div>  
+                </div>
+                <div class="level-item">
+                    <div class="field">                    
+                        <label class="label">Layer</label>
+                        <div class="control">
+                            <div class="select">
+                                <select style="width:200px">
+                                    <option>Population</option>
+                                    <option>Lifelines</option>
+                                    <option>Properties</option>
+                                    <option>Agriculture</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                </div>
+            
+                <!-- Right side -->
+                <div class="level-right">
+                    <div class="level-item has-text-centered">
+                        <div class="tile is-ancestor">
+                            <div class="tile">
+                                <span class="icon is-medium" style="margin:10px -5px 0px 10px">
+                                    <i class="fa fa-users"></i>                                   
+                                </span>
+                            </div>
+                            <div class="tile">
+                                <div style="width:100px">
+                                    <p class="title">1.2K</p>
+                                    <p class="heading">Populations</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div class="tile is-ancestor">
+                            <div class="tile">
+                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
+                                    <i class="fa fa-life-ring"></i>                                   
+                                </span>
+                            </div>
+                            <div class="tile">
+                                <div style="width:100px">
+                                    <p class="title">1.5K</p>
+                                    <p class="heading">Lifelines</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                    
+                    <div class="level-item has-text-centered">
+                        <div class="tile is-ancestor">
+                            <div class="tile">
+                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
+                                    <i class="fa fa-building"></i>                                   
+                                </span>
+                            </div>
+                            <div class="tile">
+                                <div style="width:100px">
+                                    <p class="title">3M</p>
+                                    <p class="heading">Properties</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div class="tile is-ancestor">
+                            <div class="tile">
+                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
+                                    <i class="fa fa-leaf"></i>                                   
+                                </span>
+                            </div>
+                            <div class="tile">
+                                <div style="width:100px">
+                                    <p class="title">25M</p>
+                                    <p class="heading">Agriculture</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div class="tile is-ancestor">
+                            <div class="tile">
+                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
+                                    <i class="fa fa-info-circle"></i>                                   
+                                </span>
+                            </div>
+                            <div class="tile">
+                                <div style="width:100px">
+                                    <p class="title">10M</p>
+                                    <p class="heading">Total Damage</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                                        
+                </div>
+            </nav>
+            </div>
+
+            <div class="container">
+                <div id="mapid"></div>
+            </div>            
+        </div>
+        
+        <
+        <script>
+            var mymap = L.map('mapid').setView([13.2354, 123.7781], 16);           
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1IjoiZWNmaWd1cmFjaW9uIiwiYSI6ImNqNmNwZW5ybzF0cWwzM2w3YXh2enk2dXAifQ.HLzVBNEG5-czGJjBENEc-Q'
+            }).addTo(mymap);             
+        </script>
   </body>
 </html>
