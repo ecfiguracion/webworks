@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
         integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
         crossorigin=""/>    
-    <link rel="stylesheet" href="css/app.css">      
-        
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-        crossorigin=""></script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>         
+    <link rel="stylesheet" href="css/app.css">            
   </head>
   <body>
         <section class="hero is-primary is-small">
@@ -127,7 +122,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" style="background-color:whitesmoke; padding:20px">
+        <div class="section" style="padding:20px">
             <div class="container">
                 <!-- Main container -->
                 <nav class="level">
@@ -250,15 +245,49 @@
             </div>            
         </div>
         
-        <
-        <script>
-            var mymap = L.map('mapid').setView([13.2354, 123.7781], 16);           
-            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-                maxZoom: 18,
-                id: 'mapbox.streets',
-                accessToken: 'pk.eyJ1IjoiZWNmaWd1cmFjaW9uIiwiYSI6ImNqNmNwZW5ybzF0cWwzM2w3YXh2enk2dXAifQ.HLzVBNEG5-czGJjBENEc-Q'
-            }).addTo(mymap);             
-        </script>
+        <div class="section" style="background-color:whitesmoke">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <strong>Affected Populations</strong>
+                        <div class="box">
+                        <canvas id="populations" height="120px"></canvas>                            
+                        </div>
+                    </div>
+                    <div class="column">
+                        <strong>Damage on Lifelines</strong>
+                        <div class="box">
+                        <canvas id="lifelines" height="120px"></canvas>                            
+                        </div>
+                    </div>   
+                </div>                
+            </div>
+            <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <strong>Damage on Properties</strong>
+                            <div class="box">
+                            <canvas id="properties" height="120px"></canvas>                            
+                            </div>
+                        </div>
+                        <div class="column">
+                            <strong>Damage on Agriculture</strong>
+                            <div class="box">
+                            <canvas id="agriculture" height="120px"></canvas>                            
+                            </div>
+                        </div>
+                    </div>                
+                </div>            
+        </div>     
+        
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+            integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+            crossorigin=""></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>           
+        <script src="js/map.js"></script>
+        <script src="js/chart/populations.js"></script>
+        <script src="js/chart/lifelines.js"></script>
+        <script src="js/chart/properties.js"></script>
+        <script src="js/chart/agriculture.js"></script>
   </body>
 </html>
