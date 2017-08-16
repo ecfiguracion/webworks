@@ -1,1 +1,31 @@
 #mapid { height: 580px; margin:10px 0px }
+
+.floating-menu {
+    position: fixed;
+    margin-top: 150px;
+    right: 1.2%;
+    z-index: 100;
+}
+
+.material-button {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color: #fff;
+    background:gray;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);    
+    outline: none;
+    margin:5px;
+}
+
+.icon .info {
+    margin-top: 20px;
+    padding: 0px;
+    margin-right: -20px;
+}
+

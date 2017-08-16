@@ -12,6 +12,49 @@
     <link rel="stylesheet" href="css/app.css">            
   </head>
   <body>
+        <a class="anchor" id="homesection"></a>
+        <div class="floating-menu">   
+            <a href="#homesection">
+                <button class="material-button">
+                    <span class="icon is-large">
+                        <i class="fa fa-home"></i>                                   
+                    </span>                                    
+                </button> 
+            </a>
+            </br>                     
+            <a href="#mapsection">
+                <button class="material-button">
+                    <span class="icon is-medium">
+                        <i class="fa fa-map"></i>                                   
+                    </span>                                    
+                </button> 
+            </a>
+            </br>
+            <a href="#chartsection">
+                <button class="material-button">
+                    <span class="icon is-medium">
+                            <i class="fa fa-bar-chart"></i>                                   
+                    </span>                                    
+                </button>    
+            </a>        
+            </br>
+            <a href="#demographicsection">
+                <button class="material-button">
+                    <span class="icon is-medium">
+                            <i class="fa fa-users"></i>                                   
+                    </span>                                    
+                </button>   
+            </a>    
+            </br>
+            <a href="#trendsection">
+                <button class="material-button">
+                    <span class="icon is-medium">
+                            <i class="fa fa-line-chart"></i>                                   
+                    </span>                                    
+                </button>  
+            </a>                          
+        </div>
+
         <section class="hero is-primary is-small">
             <!-- Hero header: will stick at the top -->
             <div class="hero-head">
@@ -51,18 +94,18 @@
         
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="columns">
-                        <div class="column is-one-quarter"></div>
+                <div class="container">
+                    <div class="columns has-text-centered">
                         <div class="column">
-                             <img src="images/stodomingo.png" alt="Logo" width="100px" height="100px">
-                             <p class="title is-2">Typhoon Risk Analysis</p>
-                             <h2 class="subtitle">Sto. Domingo Albay</h2>
-                        </div>                                    
-                        <div class="column is-one-quarter"></div>                                                               
+                            <img src="images/stodomingo.png" alt="Logo" 
+                                width="100px" height="100px">
+                            <div class="title">
+                                <p class="title is-2">Typhoon Risk Analysis</p>
+                                <h2 class="subtitle">Sto. Domingo Albay</h2>                       
+                            </div>                                        
+                        </div>              
                     </div>
-                </div>
-                
+                </div>                
             </div>
         
             <!-- Hero footer: will stick at the bottom -->
@@ -122,6 +165,7 @@
                 </div>
             </div>
         </div>
+        <a class="anchor" id="mapsection"></a>
         <div class="section" style="padding:20px">
             <div class="container">
                 <!-- Main container -->
@@ -162,79 +206,69 @@
                 <!-- Right side -->
                 <div class="level-right">
                     <div class="level-item has-text-centered">
-                        <div class="tile is-ancestor">
-                            <div class="tile">
-                                <span class="icon is-medium" style="margin:10px -5px 0px 10px">
-                                    <i class="fa fa-users"></i>                                   
-                                </span>
+                        <article class="media">
+                            <div class="media-left">
+                                <span class="icon is-medium">
+                                    <i class="fa fa-users info"></i>                                   
+                                </span>                                        
                             </div>
-                            <div class="tile">
-                                <div style="width:100px">
-                                    <p class="title">1.2K</p>
-                                    <p class="heading">Populations</p>
-                                </div>
+                            <div class="media-content">
+                                <p class="title">1.2K</p>
+                                <p class="heading">Populations</p>
                             </div>
-                        </div>                        
+                        </article>
                     </div>
                     <div class="level-item has-text-centered">
-                        <div class="tile is-ancestor">
-                            <div class="tile">
-                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
-                                    <i class="fa fa-life-ring"></i>                                   
-                                </span>
+                        <article class="media">
+                            <div class="media-left">
+                                <span class="icon is-medium">
+                                    <i class="fa fa-life-ring info"></i>                                   
+                                </span>                                        
                             </div>
-                            <div class="tile">
-                                <div style="width:100px">
-                                    <p class="title">1.5K</p>
-                                    <p class="heading">Lifelines</p>
-                                </div>
+                            <div class="media-content">
+                                <p class="title">1.5K</p>
+                                <p class="heading">Lifelines</p>
                             </div>
-                        </div>                        
+                        </article>
                     </div>                    
                     <div class="level-item has-text-centered">
-                        <div class="tile is-ancestor">
-                            <div class="tile">
-                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
-                                    <i class="fa fa-building"></i>                                   
-                                </span>
+                        <article class="media">
+                            <div class="media-left">
+                                <span class="icon is-medium">
+                                    <i class="fa fa-building info"></i>                                   
+                                </span>                                        
                             </div>
-                            <div class="tile">
-                                <div style="width:100px">
-                                    <p class="title">3M</p>
-                                    <p class="heading">Properties</p>
-                                </div>
+                            <div class="media-content">
+                                <p class="title">3M</p>
+                                <p class="heading">Properties</p>
                             </div>
-                        </div>                        
+                        </article>                                              
                     </div>
                     <div class="level-item has-text-centered">
-                        <div class="tile is-ancestor">
-                            <div class="tile">
-                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
-                                    <i class="fa fa-leaf"></i>                                   
-                                </span>
-                            </div>
-                            <div class="tile">
-                                <div style="width:100px">
+                        <article class="media">
+                                <div class="media-left">
+                                    <span class="icon is-medium">
+                                        <i class="fa fa-leaf info"></i>                                   
+                                    </span>                                        
+                                </div>
+                                <div class="media-content">
                                     <p class="title">25M</p>
                                     <p class="heading">Agriculture</p>
                                 </div>
-                            </div>
-                        </div>                        
+                        </article>                                                  
                     </div>
                     <div class="level-item has-text-centered">
-                        <div class="tile is-ancestor">
-                            <div class="tile">
-                                <span class="icon is-medium" style="margin:10px -10px 0px 8px">
-                                    <i class="fa fa-info-circle"></i>                                   
-                                </span>
-                            </div>
-                            <div class="tile">
-                                <div style="width:100px">
+                        <article class="media">
+                                <div class="media-left">
+                                    <span class="icon is-medium">
+                                        <i class="fa fa-info-circle info"></i>                                   
+                                    </span>                                        
+                                </div>
+                                <div class="media-content">
                                     <p class="title">10M</p>
                                     <p class="heading">Total Damage</p>
                                 </div>
-                            </div>
-                        </div>                        
+                        </article>                                                
                     </div>                                        
                 </div>
             </nav>
@@ -245,6 +279,7 @@
             </div>            
         </div>
         
+        <a class="anchor" id="chartsection"></a>
         <div class="section" style="background-color:whitesmoke">
             <div class="container">
                 <div class="columns">
@@ -283,11 +318,13 @@
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
             integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
             crossorigin=""></script>  
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>           
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>   
+        <script src="js/vendor/jquery.js"></script>                
         <script src="js/map.js"></script>
         <script src="js/chart/populations.js"></script>
         <script src="js/chart/lifelines.js"></script>
         <script src="js/chart/properties.js"></script>
         <script src="js/chart/agriculture.js"></script>
+        <script src="js/app.js"></script>
   </body>
 </html>
