@@ -13,7 +13,7 @@
   </head>
   <body>
         <a class="anchor" id="homesection"></a>
-        <div class="floating-menu">   
+        <div class="floating-menu is-hidden-mobile">   
             <a href="#homesection">
                 <button class="material-button">
                     <span class="icon is-large">
@@ -55,109 +55,124 @@
             </a>                          
         </div>
 
-        <section class="hero is-primary is-small">
-            <!-- Hero header: will stick at the top -->
-            <div class="hero-head">
-                <header class="nav">
-                    <div class="container">
-                    <div class="nav-left">
-                        <a class="nav-item">
-                            <!-- <img src="images/logo.png" alt="Logo"> -->
-                            <p style="margin-left:5px">
-                                <strong>Bitz Solution</strong>
-                            </p>
-                        </a>
-                        
-                    </div>
-                    <span class="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                    <div class="nav-right nav-menu">
-                        <a class="nav-item is-active">
-                        Home
-                        </a>
-                        <a class="nav-item">
-                        Risk Map
-                        </a>
-                        <a class="nav-item">
-                        Graphs
-                        </a>
-                        <a class="nav-item">
-                        Demographic
-                        </a>                    
-                    </div>
-                    </div>
-                </header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <p class="title is-6 iconfeaturesmenucolor">
+                        <strong>BiTZ SOLUTION</strong>
+                    </p> 
+                </div>
             </div>
         
-            <!-- Hero content: will be in the middle -->
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns has-text-centered">
-                        <div class="column">
-                            <img src="images/stodomingo.png" alt="Logo" 
-                                width="100px" height="100px">
-                            <div class="title">
-                                <p class="title is-2">Typhoon Risk Analysis</p>
-                                <h2 class="subtitle">Sto. Domingo Albay</h2>                       
-                            </div>                                        
-                        </div>              
-                    </div>
-                </div>                
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        
-            <!-- Hero footer: will stick at the bottom -->
-            <div class="hero-foot">
-            </div>
-        </section>
 
-        <div class="hero has-text-grey-dark" style="background-color:whitesmoke">
-            <div class="hero-body">
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-hidden-desktop-only" href="#homesection">
+                        <span class="icon is-medium">
+                            <i class="fa fa-home iconfeaturesmenucolor"></i>                                   
+                        </span>
+                        <p class="title is-6 iconfeaturesmenucolor">
+                            <strong>Home</strong>
+                        </p>  
+                    </a>      
+                    <a class="navbar-item is-hidden-desktop-only" href="#mapsection">
+                        <span class="icon">
+                            <i class="fa fa-map iconfeaturesmenucolor"></i>                                   
+                        </span>
+                        <p class="title is-6 iconfeaturesmenucolor">
+                            <strong>Map</strong>
+                        </p>  
+                    </a>    
+                    <a class="navbar-item is-hidden-desktop-only" href="#chartsection">
+                        <span class="icon">
+                            <i class="fa fa-bar-chart iconfeaturesmenucolor"></i>                                   
+                        </span>
+                        <p class="title is-6 iconfeaturesmenucolor">
+                            <strong>Charts</strong>
+                        </p>  
+                    </a>     
+                    <a class="navbar-item is-hidden-desktop-only" href="#demographicsection">
+                        <span class="icon">
+                            <i class="fa fa-database iconfeaturesmenucolor"></i>                                   
+                        </span>
+                        <p class="title is-6 iconfeaturesmenucolor">
+                            <strong>Data</strong>
+                        </p>  
+                    </a>    
+                    <a class="navbar-item is-hidden-desktop-only" href="#trendsection">
+                        <span class="icon">
+                            <i class="fa fa-line-chart iconfeaturesmenucolor"></i>                                   
+                        </span>
+                        <p class="title is-6 iconfeaturesmenucolor">
+                            <strong>Trends</strong>
+                        </p>  
+                    </a>                                                                  
+                </div>
+            </div>                
+        </nav>
+
+        <div class="section hero is-primary" style="margin-top:20px">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <img src="images/stodomingo.png" alt="Logo">                    
+                    <img src="images/mdrrmclogo.png" alt="Logo">                    
+                    <div class="title">
+                        <p class="title is-2">Typhoon Risk Analysis</p>
+                        <h2 class="subtitle">Municipal Disaster Risk Reduction Management Council</br>Sto. Domingo Albay</h2>                       
+                    </div>                                        
+                </div>              
+            </div>
+        </div>
+
+        <div class="section"  style="background-color:#E2F9F6">
             <div class="container has-text-centered">
                     <div class="columns">
                         <div class="column has-text-centered">
                             <span class="icon is-large">
-                                <i class="fa fa-map"></i>                                   
+                                <i class="fa fa-map iconfeaturescolor"></i>                                   
                             </span>
-                            <p class="title is-5">
+                            <p class="title is-5 iconfeaturessubcolor">
                                 <strong>Risk Map</strong>
                             </p>
-                            <p class="subtitle">
+                            <p class="subtitle iconfeaturessubcolor">
                                 Know the disaster risk areas
                             </p>
                         </div>
                         <div class="column has-text-centered">
                                 <span class="icon is-large">
-                                    <i class="fa fa-bar-chart"></i>                                   
+                                    <i class="fa fa-bar-chart iconfeaturescolor"></i>                                   
                                 </span>
-                                <p class="title is-4">
+                                <p class="title is-4 iconfeaturessubcolor">
                                     <strong>Graphs</strong>
                                 </p>
-                                <p class="subtitle">
+                                <p class="subtitle iconfeaturessubcolor">
                                     View effects and damages of the disaster
                                 </p>
                         </div>
                         <div class="column has-text-centered">
                                 <span class="icon is-large">
-                                    <i class="fa fa-users"></i>                                   
+                                    <i class="fa fa-users iconfeaturescolor"></i>                                   
                                 </span>
-                                <p class="title is-4">
+                                <p class="title is-4 iconfeaturessubcolor">
                                     <strong>Demographic</strong>
                                 </p>
-                                <p class="subtitle">
+                                <p class="subtitle iconfeaturessubcolor">
                                     Understand demographic details
                                 </p>
                         </div> 
                         <div class="column has-text-centered">
                                 <span class="icon is-large">
-                                    <i class="fa fa-line-chart"></i>                                   
+                                    <i class="fa fa-line-chart iconfeaturescolor"></i>                                   
                                 </span>
-                                <p class="title is-4">
+                                <p class="title is-4 iconfeaturessubcolor">
                                     <strong>Risk Trends</strong>
                                 </p>
-                                <p class="subtitle">
+                                <p class="subtitle iconfeaturessubcolor">
                                     Observe the disaster risk trends
                                 </p>
                         </div>                                                                             
@@ -165,9 +180,10 @@
                 </div>
             </div>
         </div>
-        <a class="anchor" id="mapsection"></a>
-        <div class="section" style="padding:20px">
-            <div class="container">
+
+        <a class="anchor" id="mapsection"></a>         
+        <div class="section">
+            <div class="container">               
                 <!-- Main container -->
                 <nav class="level">
                 <!-- Left side -->
@@ -209,7 +225,7 @@
                         <article class="media">
                             <div class="media-left">
                                 <span class="icon is-medium">
-                                    <i class="fa fa-users info"></i>                                   
+                                    <i class="fa fa-users info iconpopulationcolor"></i>                                   
                                 </span>                                        
                             </div>
                             <div class="media-content">
@@ -222,7 +238,7 @@
                         <article class="media">
                             <div class="media-left">
                                 <span class="icon is-medium">
-                                    <i class="fa fa-life-ring info"></i>                                   
+                                    <i class="fa fa-life-ring info iconlifelinecolor"></i>                                   
                                 </span>                                        
                             </div>
                             <div class="media-content">
@@ -235,7 +251,7 @@
                         <article class="media">
                             <div class="media-left">
                                 <span class="icon is-medium">
-                                    <i class="fa fa-building info"></i>                                   
+                                    <i class="fa fa-building info iconpropertiescolor"></i>                                   
                                 </span>                                        
                             </div>
                             <div class="media-content">
@@ -248,7 +264,7 @@
                         <article class="media">
                                 <div class="media-left">
                                     <span class="icon is-medium">
-                                        <i class="fa fa-leaf info"></i>                                   
+                                        <i class="fa fa-leaf info iconagriculturecolor"></i>                                   
                                     </span>                                        
                                 </div>
                                 <div class="media-content">
@@ -261,7 +277,7 @@
                         <article class="media">
                                 <div class="media-left">
                                     <span class="icon is-medium">
-                                        <i class="fa fa-info-circle info"></i>                                   
+                                        <i class="fa fa-info-circle info icontotalcolor"></i>                                   
                                     </span>                                        
                                 </div>
                                 <div class="media-content">
@@ -314,6 +330,388 @@
                     </div>                
                 </div>            
         </div>     
+
+        <a class="anchor" id="demographicsection"></a>
+        <div class="section" style="background-color:whitesmoke">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h6 class="title is-4">Affected Poppulation</h6>                              
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <strong>Displaced/Evacuated</strong>                                      
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>Entity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Families</td>
+                                    <td>2,942</td>
+                                </tr>
+                                <tr>
+                                    <td>Persons</td>
+                                    <td>10,483</td>
+                                </tr>                                                                                                                                                                                                                                  
+                            </tbody>
+                        </table>                                  
+                    </div> 
+                    <div class="column">
+                        <strong>Casualties</strong>                                      
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>Entity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dead</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Injured</td>
+                                    <td>0</td>
+                                </tr>  
+                                <tr>
+                                    <td>Missing</td>
+                                    <td>0</td>
+                                </tr>                                                                                                                                                                                                                                                                     
+                            </tbody>
+                        </table>                                  
+                    </div>                     
+                </div>                  
+                <div class="columns">
+                    <div class="column">
+                        <h6 class="title is-4">Damage Properties</h6>                                            
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>Structures</th>
+                                    <th>Totally Damaged</th>
+                                    <th>Critically Damaged</th>
+                                    <th>Estimated Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Houses</td>
+                                    <td>395</td>
+                                    <td>632</td>
+                                    <td>61.25M</td>
+                                </tr>
+                                <tr>
+                                    <td>School Buildings</td>
+                                    <td></td>
+                                    <td>12</td>
+                                    <td>5M</td>
+                                </tr>                                
+                                <tr>
+                                    <td>Goverment Offices</td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>3M</td>
+                                </tr>         
+                                <tr>
+                                    <td>Public Markets</td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>1.5M</td>
+                                </tr>  
+                                <tr>
+                                    <td>Flood Control</td>
+                                    <td></td>
+                                    <td>5</td>
+                                    <td>8M</td>
+                                </tr>                                                                                                                                                                                                  
+                            </tbody>
+                        </table>                                  
+                    </div> 
+                </div>                
+                <div class="columns">
+                    <div class="column">
+                        <h6 class="title is-4">Damage Lifelines</h6>                                                 
+                        <strong>Transportation Facilities</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Location</th>
+                                    <th>Passable</th>
+                                    <th>Not Passable</th>
+                                    <th>Length(km)</th>
+                                    <th>Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6"><strong>A. Roads</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>1. Municipal</td>
+                                    <td >San Addres</td>
+                                    <td class="has-text-centered">X</td>
+                                    <td class="has-text-centered"></td>
+                                    <td>2.0</td>
+                                    <td>6.0M</td>
+                                </tr>   
+                                <tr>
+                                    <td>2. Barangay</td>
+                                    <td>FS Alinsog</td>
+                                    <td class="has-text-centered"></td>
+                                    <td class="has-text-centered">X</td>
+                                    <td>5.3</td>
+                                    <td>7.5M</td>
+                                </tr>   
+                                <tr>
+                                    <td colspan="6"><strong>B. Bridges</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>1. RCBC</td>
+                                    <td>BSR, San Address, San Roque</td>
+                                    <td class="has-text-centered">X</td>
+                                    <td class="has-text-centered"></td>
+                                    <td>4 units</td>
+                                    <td>2.5M</td>
+                                </tr>        
+                                <tr>
+                                    <td colspan="6"><strong>C. Slope Protection<strong></td>
+                                </tr>
+                                <tr>
+                                    <td>1. Slop Suspension</td>
+                                    <td>FS</td>
+                                    <td class="has-text-centered"></td>
+                                    <td class="has-text-centered"></td>
+                                    <td>200m</td>
+                                    <td>3.0M</td>
+                                </tr>                                                                                                                                                                                                                                                                                                                                              
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>  
+                <div class="columns">
+                    <div class="column">
+                        <strong>Communication Facilities</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Location</th>
+                                    <th>Operational</th>
+                                    <th>Non Operational</th>
+                                    <th>Number</th>
+                                    <th>Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell Sites</td>
+                                    <td>San Roque</td>
+                                    <td class="has-text-centered">X</td>
+                                    <td class="has-text-centered"></td>
+                                    <td class="has-text-centered">3</td>                                    
+                                    <td></td>
+                                </tr>    
+                                <tr>
+                                    <td>CATV</td>
+                                    <td>Entire Municipality</td>
+                                    <td class="has-text-centered"></td>
+                                    <td class="has-text-centered">X</td>
+                                    <td class="has-text-centered">1</td>                                    
+                                    <td></td>
+                                </tr>                                                                                                                                                                                                                                                                                                                                                                           
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>    
+                <div class="columns">
+                    <div class="column">
+                        <strong>Electrical Power</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Location</th>
+                                    <th>Operational</th>
+                                    <th>Non Operational</th>
+                                    <th>Number</th>
+                                    <th>Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>APEC</td>
+                                    <td>Entire Municipality</td>
+                                    <td class="has-text-centered"></td>
+                                    <td class="has-text-centered">X</td>
+                                    <td class="has-text-centered">3</td>                                    
+                                    <td></td>
+                                </tr>    
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>      
+                <div class="columns">
+                    <div class="column">
+                        <strong>Water Facilities</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Location</th>
+                                    <th>Operational</th>
+                                    <th>Non Operational</th>
+                                    <th>Number</th>
+                                    <th>Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Municipal Water Works</td>
+                                    <td>Entire Municipality</td>
+                                    <td class="has-text-centered">Partly Operational</td>
+                                    <td class="has-text-centered">1</td>
+                                    <td class="has-text-centered">3</td>                                    
+                                    <td>15.0M</td>
+                                </tr>    
+                                <tr>
+                                    <td>Barangay Water Works</td>
+                                    <td>All</td>
+                                    <td class="has-text-centered">X</td>
+                                    <td class="has-text-centered"></td>
+                                    <td class="has-text-centered">13</td>                                    
+                                    <td>8.0M</td>
+                                </tr>                                  
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>  
+                <div class="columns">
+                    <div class="column">
+                        <h6 class="title is-4">Damage Agriculture</h6>                                                 
+                        <strong>Crops</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="has-text-centered">Areas Damaged/Losses<br>(No. of Hectares)</th>
+                                    <th class="has-text-centered">Metric Tons</th>
+                                    <th class="has-text-centered">Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rice</td>
+                                    <td class="has-text-centered">591</td>
+                                    <td class="has-text-centered">746</td>
+                                    <td class="has-text-centered">11.20M</td>
+                                </tr>   
+                                <tr>
+                                    <td>Corn</td>
+                                    <td class="has-text-centered">88</td>
+                                    <td class="has-text-centered">146</td>
+                                    <td class="has-text-centered">2.20M</td>
+                                </tr>  
+                                <tr>
+                                    <td>Corn</td>
+                                    <td class="has-text-centered">89</td>
+                                    <td class="has-text-centered">246</td>
+                                    <td class="has-text-centered">12.20M</td>
+                                </tr>                             
+                                <tr>
+                                    <td>Root Crops</td>
+                                    <td class="has-text-centered">90</td>
+                                    <td class="has-text-centered">106</td>
+                                    <td class="has-text-centered">10.20M</td>
+                                </tr>                                                         
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>  
+                <div class="columns">
+                    <div class="column">
+                        <strong>Fisheries</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="has-text-centered">Areas Damaged/Losses<br>(No. of Hectares)</th>
+                                    <th class="has-text-centered">Metric Tons</th>
+                                    <th class="has-text-centered">Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fishpond</td>
+                                    <td class="has-text-centered">591</td>
+                                    <td class="has-text-centered">746</td>
+                                    <td class="has-text-centered">11.20M</td>
+                                </tr>   
+                                <tr>
+                                    <td>Fishing</td>
+                                    <td class="has-text-centered">88</td>
+                                    <td class="has-text-centered">146</td>
+                                    <td class="has-text-centered">2.20M</td>
+                                </tr>  
+                                <tr>
+                                    <td>Boats</td>
+                                    <td class="has-text-centered">89</td>
+                                    <td class="has-text-centered">246</td>
+                                    <td class="has-text-centered">12.20M</td>
+                                </tr>                                                                                     
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>       
+                <div class="columns">
+                    <div class="column">
+                        <strong>Livestock, Poultry and Fowl</strong>
+                        <table class="table is-bordered is-striped is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>Animals(No. of Hectares)</th>
+                                    <th>No. of Heads</th>
+                                    <th>Estimated Cost</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Livestock</td>
+                                    <td class="has-text-centered">8</td>
+                                    <td class="has-text-centered">200,000.00</td>
+                                </tr>   
+                                <tr>
+                                    <td>Poultry and Fowl</td>
+                                    <td class="has-text-centered">967</td>
+                                    <td class="has-text-centered">200,000.00</td>
+                                </tr>  
+                            </tbody>
+                        </table>                                                       
+                    </div> 
+                </div>                                                                                              
+            </div>            
+        </div>        
+
+        <footer class="footer">
+            <div class="container">
+              <div class="content has-text-centered">
+                <p><strong>Typhoon Risk Analysis</strong> by Elmer C. Figuracion</p>
+                </p>A capstone project for Masters In Information Technology</p>
+                <p>University of Cordilleras</p>
+                <p>
+                  <a class="icon" href="https://github.com/jgthms/bulma">
+                    <i class="fa fa-th-large "></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </footer>        
         
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
             integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="

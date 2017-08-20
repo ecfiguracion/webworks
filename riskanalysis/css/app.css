@@ -1,8 +1,72 @@
-#mapid { height: 580px; margin:10px 0px }
+#mapid 
+{ 
+    height: 580px; 
+    margin:10px 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar { 
+    position: fixed !important; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    background-color: #00D1B2;
+    z-index: 100;  
+    border-bottom: 1px solid #27D8BE;
+}
+
+.iconfeaturescolor
+{
+    color: #00B2D1;
+}
+
+.iconfeaturessubcolor
+{
+    color:#00768B;
+}
+
+.iconfeaturesmenucolor
+{
+    color:white;
+}
+
+.iconpopulationcolor
+{
+    color: orange ;
+}
+
+.iconlifelinecolor
+{
+    color:#00B2D1 ;
+}
+
+.iconpropertiescolor
+{
+    color:#8B7600 ;
+}
+
+.iconagriculturecolor
+{
+    color:green ;
+}
+
+.icontotalcolor
+{
+    color: red ;
+}
+
+.footer { 
+    background-color: white;
+}
+
+.anchor {
+    padding-top:20px; 
+}
 
 .floating-menu {
     position: fixed;
-    margin-top: 150px;
+    margin-top: 120px;
     right: 1.2%;
     z-index: 100;
 }
@@ -27,5 +91,9 @@
     margin-top: 20px;
     padding: 0px;
     margin-right: -20px;
+}
+
+a.navbar-item:hover{
+    background-color:#AAAAAA;
 }
 
