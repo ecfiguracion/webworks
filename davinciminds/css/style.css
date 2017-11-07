@@ -53,7 +53,14 @@ body {
 .features article h6 {
     font-weight: bold;
     color:#435656;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
+
+/* .features .text-muted {
+    padding-top: 0px;
+    margin-top: -4px;
+} */
 
 .services {
     background-color: #E3F6FC;
