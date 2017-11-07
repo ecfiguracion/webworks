@@ -10,7 +10,7 @@ body {
 
 .header a.navbar-brand {
     font-weight: bold;
-    color: #1BBC36;
+    color: #4169e1;
 }
 
 .header .nav a {
@@ -19,7 +19,7 @@ body {
 }
 
 .slides {
-    background-color: #08B3E7;
+    background-color: #4169E1;
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -77,7 +77,7 @@ body {
 }
 
 .services .service-icon i {
-    color:#5B5B5B;
+    color: #3399cc;
     font-size: 70px;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .team .card-header {
-    background-color: #F6FAFC;
+    background-color: #ECF5FF;
 }
 
 .contactus {
