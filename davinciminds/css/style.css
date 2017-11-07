@@ -8,6 +8,26 @@ body {
 	line-height:1.6em;    
 }
 
+.header a.navbar-brand {
+    font-weight: bold;
+    color: #1BBC36;
+}
+
+.header .nav a {
+    font-weight: bold;
+    color: gray;
+}
+
+.slides {
+    background-color: #08B3E7;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.slides h2, .slides p {
+    color: whitesmoke;
+}
+
 .carousel-caption h3 {
     font-weight: bold;
     -webkit-text-stroke: 1px gray;
@@ -24,8 +44,17 @@ body {
     padding-bottom: 30px;
 }
 
+.features h4 {
+    color: #007BFF;
+}
+
+.features article h6 {
+    font-weight: bold;
+    color:#777777;
+}
+
 .services {
-    background-color: whitesmoke;
+    background-color: #E3F6FC;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -37,6 +66,7 @@ body {
     margin-right: auto;
     text-transform: uppercase;
     text-align: center;
+    color: #05779A;
 }
 
 .services .service-icon {
@@ -74,7 +104,7 @@ body {
 }
 
 .contactus {
-    background-color: whitesmoke;    
+    background-color: #E3F6FC;    
     padding-top: 50px;
     padding-bottom: 50px;
 }
